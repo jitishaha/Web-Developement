@@ -1,0 +1,23 @@
+#webcam-container {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  #demo1 {
+    text-align: center;
+    margin: 5px;
+  }
+  
+  .iframe1 {
+    margin: 15px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .teachable-model {
+    background-color: #f09a9a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 3px;
+  }
