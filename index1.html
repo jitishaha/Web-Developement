@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AI BASED MASK DETECTION SYSTEM</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/new_file.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: DevFolio - v2.0.0
+  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body id="page-top" class="body1">
+
+  <!-- ======= Header/ Navbar ======= -->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">Codebugged</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="intro intro-single route bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="overlay-mf"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <h2 class="intro-title mb-4">AI BASED MASK DETECTION SYSTEM</h2>
+          <ol class="breadcrumb d-flex justify-content-center">
+            <li class="breadcrumb-item">
+              <a href="#">Product-Plier</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">Real Time Video</a>
+            </li>
+            <li class="breadcrumb-item active">Data</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ======= Blog Single Section ======= -->
+    <section class="blog-wrapper sect-pt4" id="blog">
+      <div class="container">
+        <div class="row">
+          
+            <div class="post-box">
+                <div class="article-content">
+                    <h5>1. Edge Computing Module- </h5><p> The AI programs runs locally</p>
+                    <h5>Size specifications:-</h5><p>70 x 45 mm module</p>
+                    <h5>
+                    Working:-</h5>
+                    <p>This Module can be fitted anywhere and can be connected to speaker/monitor screen for raising alerts.</p>
+                    <h5>Price:-</h5>
+                    <p>2800/-For one KIT(Price may vary based on camera quality)</p>
+                    <h5>Range:-</h5>
+                    <p>Could detect up to 100 to 120 people in one frame.Maximum permissible distance for detection is 10 metres(it also depends on lighting conditions and camera quality)</p>
+                    <h4>2.Cloud Computing Module-</h4>
+                    <p>The AI programs runs on cloud</p>
+                    <h5>Working:-</h5>
+                    <p>This module just requires a client at use place and the AI programs on cloud.</p>
+                    <h5>Price:-</h5>
+                    <p>Ranges on monthly charges of GCP and AWS.(10,000/-Development Fees)</p>
+                    <h5>Range:-</h5>
+                    <p>Could detect up to 100 to 120 people in one frame.Maximum permissible distance for detection is 10 metres(it also depends on internet speed, lighting conditions and camera quality)</p>
+                    <h5>Use Cases:-</h5>
+                    <p>Airports, Hospitals, Offices, Cafes and Railway Stations </p>
+                    <p>For Demo</p>
+                    <p>Contact us:-
+                      Sarthak Srivastava(Founder and CEO,Codebugged Organization)</p>
+                    <p>Mail id: thecodebugged@gmail.com                       P#+918004006979</p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">“We have a chance to do something extraordinary. As we head out of this pandemic we can change the world.</p>
+                </blockquote>
+                <div class="teachable-model">
+                    <h5>Detect mask</h5>
+                    <p class="lead">Please press the button below to start detecting mask.</p>
+                    <button class="button" type="button" onclick="init()">Start</button>
+                            <div id="webcam-container"></div>
+                            <div id="label-container"></div>
+                            <div id="demo1" class="lead"></div>
+
+                            <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+                            <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+                            <script type="text/javascript">
+                                // More API functions here:
+                                // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+                                // the link to your model provided by Teachable Machine export panel
+                                const URL = "https://teachablemachine.withgoogle.com/models/HF8COQa9T/";
+
+                                let model, webcam, labelContainer, maxPredictions;
+
+                                // Load the image model and setup the webcam
+                                async function init() {
+                                    const modelURL = URL + "model.json";
+                                    const metadataURL = URL + "metadata.json";
+
+                                    // load the model and metadata
+                                    // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                                    // or files from your local hard drive
+                                    // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                                    model = await tmImage.load(modelURL, metadataURL);
+                                    maxPredictions = model.getTotalClasses();
+
+                                    // Convenience function to setup a webcam
+                                    const flip = true; // whether to flip the webcam
+                                    webcam = new tmImage.Webcam(400, 400, flip); // width, height, flip
+                                    await webcam.setup(); // request access to the webcam
+                                    await webcam.play();
+                                    window.requestAnimationFrame(loop);
+
+                                    // append elements to the DOM
+                                    document.getElementById("webcam-container").appendChild(webcam.canvas);
+                                    labelContainer = document.getElementById("label-container");
+                                    for (let i = 0; i < maxPredictions; i++) { // and class labels
+                                        labelContainer.appendChild(document.createElement("div"));
+                                    }
+                                }
+
+                                async function loop() {
+                                    webcam.update(); // update the webcam frame
+                                    await predict();
+                                    window.requestAnimationFrame(loop);
+                                }
+
+                                // run the webcam image through the image model
+                                async function predict() {
+                                    // predict can take in an image, video or canvas html element
+                                    var prediction = await model.predict(webcam.canvas);
+                                    for (let i = 0; i < maxPredictions; i++) {
+                                        if ( prediction[i].probability.toFixed(2) > 0.6){
+                                            var classPrediction =
+                                            prediction[i].className;
+                                            
+                                        }
+                                        demo1.innerHTML = classPrediction;
+                                    }
+                                }
+                            </script>
+                            </div>
+                <div class="iframe1">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/u7VBWjoKNkQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            </div>
+
+            <div class="form-comments">
+              <div class="title-box-2">
+                <h3 class="title-left">
+                  Leave a Reply
+                </h3>
+              </div>
+              <form class="form-mf">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control input-mf" id="inputName" placeholder="Name *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <div class="form-group">
+                      <input type="email" class="form-control input-mf" id="inputEmail1" placeholder="Email *" required>
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="url" class="form-control input-mf" id="inputUrl" placeholder="Website">
+                    </div>
+                  </div>
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <textarea id="textMessage" class="form-control input-mf" placeholder="Comment *" name="message" cols="45" rows="8" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>Codebugged</strong>. All Rights Reserved</p>
+            <div class="credits">
+              <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+            -->
+              Designed by <a href="https://www.linkedin.com/in/dharmjeet2dk/">Dharmjeet Kumar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/jquery.counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
